@@ -16,11 +16,11 @@ let usuarioSchema = new Schema({
     },
     email : {
         type: String,
+        unique : true,
         required : [true, 'El correo es necesario']
     },
     password : {
         type: String,
-        unique : true,
         required : [true, 'La contraseña es necesario']
     },
     img : {
